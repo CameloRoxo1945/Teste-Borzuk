@@ -2,25 +2,242 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Meu Site Simples</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colégio Barbosa Ferraz - Educação de Excelência</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo ao Meu Site</h1>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Colégio Barbosa Ferraz</span>
+            </div>
+            <nav class="nav">
+                <a href="#sobre">Sobre</a>
+                <a href="#diferenciais">Diferenciais</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </header>
+
     <main>
-        <section id="secao1">
-            <h2>Seção 1</h2>
-            <p>Conteúdo da seção 1.</p>
-            <button onclick="window.location.href='pagina1.html'">Ir para Página 1</button>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="badge">Educação de Excelência</div>
+                        <h1>Colégio Barbosa Ferraz</h1>
+                        <p>Formando cidadãos conscientes e preparados para o futuro há mais de 30 anos. Uma educação que vai além da sala de aula, desenvolvendo valores e competências para a vida.</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary">Agende uma Visita</button>
+                            <button class="btn btn-outline">Conheça Nossos Cursos</button>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <span>Mais de 1.200 alunos</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-award"></i>
+                                <span>30+ anos de tradição</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="/placeholder.svg?height=400&width=600" alt="Estudantes do Colégio Barbosa Ferraz">
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="secao2">
-            <h2>Seção 2</h2>
-            <p>Conteúdo da seção 2.</p>
-            <button onclick="window.location.href='Página2.html'">Ir para Página 2</button>
+
+        <!-- Sobre Section -->
+        <section id="sobre" class="sobre">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Sobre o Colégio Barbosa Ferraz</h2>
+                    <p>Fundado em 1993, o Colégio Barbosa Ferraz é uma instituição de ensino comprometida com a formação integral de seus alunos, oferecendo educação de qualidade desde a Educação Infantil até o Ensino Médio.</p>
+                </div>
+                <div class="sobre-content">
+                    <div class="sobre-image">
+                        <img src="/placeholder.svg?height=400&width=600" alt="Instalações do colégio">
+                    </div>
+                    <div class="sobre-text">
+                        <div class="sobre-item">
+                            <h3>Nossa Missão</h3>
+                            <p>Proporcionar uma educação transformadora que desenvolva o potencial de cada aluno, formando cidadãos éticos, críticos e preparados para os desafios do século XXI.</p>
+                        </div>
+                        <div class="sobre-item">
+                            <h3>Nossos Valores</h3>
+                            <ul class="valores-list">
+                                <li><i class="fas fa-check-circle"></i> Excelência acadêmica</li>
+                                <li><i class="fas fa-check-circle"></i> Formação de valores</li>
+                                <li><i class="fas fa-check-circle"></i> Inovação pedagógica</li>
+                                <li><i class="fas fa-check-circle"></i> Responsabilidade social</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diferenciais Section -->
+        <section id="diferenciais" class="diferenciais">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nossos Diferenciais</h2>
+                    <p>O que torna o Colégio Barbosa Ferraz único na formação de nossos alunos</p>
+                </div>
+                <div class="diferenciais-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>Metodologia Inovadora</h3>
+                        <p>Utilizamos metodologias ativas que colocam o aluno no centro do processo de aprendizagem</p>
+                        <ul>
+                            <li>• Aprendizagem baseada em projetos</li>
+                            <li>• Tecnologia integrada ao ensino</li>
+                            <li>• Aulas práticas e experimentais</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon green">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Corpo Docente Qualificado</h3>
+                        <p>Professores especializados e em constante atualização pedagógica</p>
+                        <ul>
+                            <li>• 95% com pós-graduação</li>
+                            <li>• Formação continuada</li>
+                            <li>• Acompanhamento individualizado</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon purple">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>Infraestrutura Completa</h3>
+                        <p>Espaços modernos e equipados para o melhor desenvolvimento dos alunos</p>
+                        <ul>
+                            <li>• Laboratórios de ciências</li>
+                            <li>• Biblioteca moderna</li>
+                            <li>• Quadras esportivas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos Section -->
+        <section id="depoimentos" class="depoimentos">
+            <div class="container">
+                <div class="section-header">
+                    <h2>O que dizem sobre nós</h2>
+                    <p>Depoimentos de pais, alunos e ex-alunos que fazem parte da nossa família</p>
+                </div>
+                <div class="depoimentos-grid">
+                    <div class="depoimento-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Maria Silva</h4>
+                        <span>Mãe de aluno do 9º ano</span>
+                        <p>"O Colégio Barbosa Ferraz transformou a vida do meu filho. O acompanhamento individualizado e a qualidade do ensino são excepcionais. Recomendo para todas as famílias."</p>
+                    </div>
+                    <div class="depoimento-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>João Santos</h4>
+                        <span>Ex-aluno, hoje universitário</span>
+                        <p>"Estudei no Barbosa Ferraz durante todo o Ensino Médio. A base que recebi foi fundamental para meu sucesso no vestibular e na universidade. Sou grato por tudo!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Faça parte da nossa família</h2>
+                    <p>Agende uma visita e conheça de perto tudo o que o Colégio Barbosa Ferraz pode oferecer para o futuro do seu filho.</p>
+                    <form class="cta-form" id="visitaForm">
+                        <input type="email" placeholder="Seu melhor e-mail" required>
+                        <button type="submit" class="btn btn-secondary">Agendar Visita</button>
+                    </form>
+                    <small>Entraremos em contato em até 24 horas para agendar sua visita.</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato Section -->
+        <section id="contato" class="contato">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Entre em Contato</h2>
+                    <p>Estamos prontos para atendê-lo e esclarecer todas as suas dúvidas</p>
+                </div>
+                <div class="contato-grid">
+                    <div class="contato-card">
+                        <div class="contato-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Telefone</h3>
+                        <p>(11) 3456-7890</p>
+                        <p>(11) 98765-4321</p>
+                    </div>
+                    <div class="contato-card">
+                        <div class="contato-icon green">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>E-mail</h3>
+                        <p>contato@barbosaferraz.edu.br</p>
+                        <p>secretaria@barbosaferraz.edu.br</p>
+                    </div>
+                    <div class="contato-card">
+                        <div class="contato-icon purple">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Endereço</h3>
+                        <p>Rua das Flores, 123</p>
+                        <p>Centro - São Paulo/SP</p>
+                        <p>CEP: 01234-567</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Colégio Barbosa Ferraz. Todos os direitos reservados.</p>
+                <nav class="footer-nav">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
